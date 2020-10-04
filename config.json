@@ -1,0 +1,10 @@
+{
+
+    "jobo":{"mail":"mailjobo@gmail.com", "password":""},
+    
+    "senderMail":{"mail":"mailgmail@gmail.com", "password":""},
+    
+    "send_to":["enviar_a1@gmail.com", "enviar_a2@gmail.com"],
+
+    "chromeDriverPath":"path del archivo chromedriver.exe"
+}
