@@ -7,6 +7,11 @@ herramienta.
 
 joboAdvisor automatiza la busqueda de nuevos espectaculos y te envía un mail en el caso de que haya un nuevo espectáculo disponible.
 
+### Requisitos para automatización
+
+- Windows
+- Anaconda
+
 ## Instalación y uso
 
 En primer lugar tienes que ejecutar el script install.py. Este script simplemente te crea una base de datos donde se añadiran los espectáculos de los que ya se te ha avisado
@@ -18,4 +23,4 @@ desde el que quieres que se envíe la información con los espectáculos nuevos.
 
 Una vez has seguido los dos pasos anteriores ya puedes ejecutar el script advisor.py que es el que hace la busqueda de nuevos espectaculos mediante web scrapping. 
 
-Si quieres automatizar el proceso para que esta busqueda se haga de manera periódica configura el archivo joboAdvisor.bat para que ejecute el archivo advisor.py
+Si quieres automatizar el proceso para que esta busqueda se haga de manera periódica utiliza el archivo joboAdvisor.bat en el "Programador de Tareas" de Windows. 
