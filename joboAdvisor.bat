@@ -1,3 +1,3 @@
 call activate base
-python "C:\Users\arana\OneDrive\Documentos\joboAdvisor\advisor.py" %*
+python "%~dp0\advisor.py" %*
 call conda deactivate
