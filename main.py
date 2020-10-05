@@ -1,7 +1,7 @@
 #!C:\Users\arana\AppData\Local\Continuum\anaconda3\python.exe
 
 import json
-import functions
+import utils_functions
 import sqlite3
 import os
 
@@ -28,14 +28,15 @@ conection_BBDD = conn.cursor()
 
 
 # Acceso a la lista de espectaculos
-page = functions.get_events_page(url, credentials_jobo, driver)
+page = utils_functions.get_events_page(url, credentials_jobo, driver)
 
-events = functions.get_events(page)
+events = utils_functions.get_events(page)
 
-view_events = functions.get_view_events(conection_BBDD)
+view_events = utils_functions.get_view_events(conection_BBDD)
 
-mail_text = functions.available_events(events, view_events, conection_BBDD)
+mail_text = utils_functions.available_events(events, view_events, conection_BBDD)
 
 if len(mail_text) > 0:
 
-    functions.send_mail(mail_text, credentials_gmail, send_to)
+    conn.commit()
+    utils_functions.send_mail(mail_text, credentials_gmail, send_to)

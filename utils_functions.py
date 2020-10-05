@@ -42,7 +42,8 @@ def get_view_events(conection_BBDD):
 
     view = conection_BBDD.fetchall()
     view = [item for t in view for item in t]
-
+    print("Espectaculos vistos")
+    print(view)
     return view
 
 
@@ -58,7 +59,9 @@ def available_events(events, view_events, conection_BBDD):
 
             title = event.find(attrs={'class': "title"}).text
             title = title.replace('\n', ' ').replace('\r', '').replace('\t', '').replace(' ', '')
-
+            print("El if que decide")
+            print(title)
+            print(view_events)
             if title not in view_events:
 
                 text = new_event(event, title, conection_BBDD)
@@ -81,7 +84,7 @@ def new_event(event, title, conection_BBDD):
 
     # Agregamos el espectaculo a la BBDD de espectaculos enviados
     conection_BBDD.execute('insert into ESPECTACULOS values (?,?,?,?)', [title, dia, hora, sitio])
-
+    
     text = 'TITULO: {}\n DIA: {}\n HORA: {}\n SITIO: {}\n\n\n\n'.format(title, dia, hora, sitio)
 
     return text
