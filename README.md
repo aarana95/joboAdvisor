@@ -1,5 +1,7 @@
 # joboAdvisor
 
+Puedes leer en este artículo una explicación más detallada del proyecto: https://medium.com/@anderarana/aplicando-web-scraping-para-ir-gratis-al-teatro-855ff04bc9e5.
+
 JOBO es un programa del Aytm. de Madrid para fomentar la cultura entre los jovenes. Mediante tu carnet JOBO puedes asistir gratis a espectáculos que se realizan en los distintos 
 teatros y espacios de gestión municipal. Para conseguir las entradas para estos no hay ninguna newsletter ni nada parecido. Tienes que meterte en su pagina web y ver si han 
 publicado nuevos espectaculos. Ante la incomodidad de tener que meterte periodicamente a ver si encuentras algo nuevo (y que no se haya agotado ya) he desarrollado esta
